@@ -1,0 +1,34 @@
+task 1 - assign an ip address to an interface :
+
+- man ifconfig
+- ifconfig 
+- sudo ifconfig <interface name> 10.0.<section>.<serial number> netmask <netmask> 
+- sudo ip addr add <details>
+- ip neigh
+
+task 2 - ping PDU :
+
+- man ping
+- ping www.google.co.in
+- ip neigh
+- ping <ip address>
+- // observe ICMP message, request/reply & sequence number
+- // tabulate for first echo request & reply : frame mnumber, src ip, dest ip, icmp type value, icmp code value, source ethernet address, dest ethernet address, ip version, time to live (ttl) value
+
+task 3 - http pdu capture :
+
+- tabulate (for first get request & response) frame number, src port, dest port, src ip addr, dest ip addr, src ethernet addr, dest ethernet addr
+- use wireshark to follow tcp stream
+
+task 4 - tcpdump :
+
+- man tcpdump
+- ping www.google.co.in
+- sudo tcpdump -i any -c5 icmp
+- sudo traceroute www.google.co.in
+- sudo traceroute -n www.google.co.in
+- sudo traceroute -I www.google.co.in
+- man nmap
+- nmap www.pes.edu
+
+	
